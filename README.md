@@ -1,2 +1,3 @@
-# ltpro_theme
+# LTPro Theme
+
 LT Productions' Theme

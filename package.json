@@ -1,0 +1,22 @@
+{
+  "name": "ltpro_theme",
+  "version": "1.0.0",
+  "description": "LT Productions' Theme",
+  "main": "/js/ltpro.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "ltpro",
+    "theme",
+    "ltpro",
+    "laptrinhcomvn"
+  ],
+  "author": "LT Team",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/laptrinhcomvn/ltpro-theme"
+}
