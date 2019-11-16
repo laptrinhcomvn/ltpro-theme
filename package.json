@@ -2,15 +2,21 @@
   "name": "ltpro-theme",
   "version": "1.0.0",
   "description": "LT Productions' Theme",
+  "author": "LT Team",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/laptrinhcomvn/ltpro-theme",
+  "private": true,
+  "repository": "git@github.com:laptrinhcomvn/ltpro-theme.git",
   "main": "/js/app.js",
   "dependencies": {
-    "clean-css-cli": "^4.3.0",
-    "fs": "0.0.1-security",
-    "lodash": "^4.17.15",
-    "node-sass": "^4.13.0"
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "clean-css": "^4.2.1"
+    "clean-css": "^4.2.1",
+    "clean-css-cli": "^4.3.0",
+    "fs": "0.0.1-security",
+    "node-sass": "^4.13.0",
+    "terser": "^4.4.0"
   },
   "scripts": {
     "build": "node js/app.js"
@@ -19,13 +25,6 @@
     "wordpress",
     "theme",
     "ltpro",
-    "theme",
-    "ltpro",
     "laptrinhcomvn"
-  ],
-  "author": "LT Team",
-  "license": "GPL-2.0-or-later",
-  "homepage": "https://github.com/laptrinhcomvn/ltpro-theme",
-  "private": true,
-  "repository": "git@github.com:laptrinhcomvn/ltpro-theme.git"
+  ]
 }

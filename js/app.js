@@ -1,5 +1,4 @@
 var fs = require('fs');
-var gcc = require('google-closure-compiler').compiler;
 var CleanCSS = require('clean-css');
 var sass = require('node-sass');
 
@@ -33,10 +32,14 @@ sass.render({
 
 new CleanCSS().minify(['css/style.css', 'css/responsive.css']);
 
-new gcc({
-    js: ['js/ltpro.js'],
-    js_output_file: 'js/ltpro.min.js'
-}).run(function (exitCode, stdOut, stdErr) {
-    if (stdErr)console.log(stdErr);
-    if (stdOut)console.log(stdOut);
+
+var Terser = require("terser");
+var result = Terser.minify(fs.readFileSync("js/ltpro.js", "utf8"), {
+    compress: {
+        dead_code: true,
+        global_defs: {
+            DEBUG: false
+        }
+    }
 });
+fs.writeFileSync("js/ltpro.min.js", result.code, "utf8");
