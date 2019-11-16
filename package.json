@@ -1,12 +1,12 @@
 {
-  "name": "ltpro_theme",
+  "name": "ltpro-theme",
   "version": "1.0.0",
   "description": "LT Productions' Theme",
-  "main": "/js/ltpro.js",
+  "main": "/js/app.js",
   "dependencies": {
     "clean-css-cli": "^4.3.0",
     "fs": "0.0.1-security",
-    "google-closure-compiler": "^20190929.0.0",
+    "lodash": "^4.17.15",
     "node-sass": "^4.13.0"
   },
   "devDependencies": {
@@ -26,5 +26,6 @@
   "author": "LT Team",
   "license": "GPL-2.0-or-later",
   "homepage": "https://github.com/laptrinhcomvn/ltpro-theme",
-  "private": true
+  "private": true,
+  "repository": "git@github.com:laptrinhcomvn/ltpro-theme.git"
 }
