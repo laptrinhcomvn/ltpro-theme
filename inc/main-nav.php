@@ -1,9 +1,9 @@
 <div id="primary-nav-bar" class="row">
     <nav class="col-12 navbar navbar-expand-lg navbar-light">
         <div class="col-4 col-sm-6 col-md-3">
-            <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <img src="<?php echo ltpro_get_custom_logo(); ?>" />
-            </a>
+            <div class="navbar-brand">
+                <?php ltpro_site_logo(); ?>
+            </div>
         </div>
 
         <div class="col-8 col-sm-6  col-md-9 rightside">

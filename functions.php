@@ -1,4 +1,9 @@
 <?php 
+function ltpro_pagination_rewrite() {
+  add_rewrite_rule(get_option('category_base').'/page/?([0-9]{1,})/?$', 'index.php?pagename='.get_option('category_base').'&paged=$matches[1]', 'top');
+}
+add_action('init', 'ltpro_pagination_rewrite');
+
 
 // Allow to set logo for site
 function ltpro_custom_logo_setup() {
@@ -160,4 +165,13 @@ add_action( 'widgets_init', 'ltpro_theme_widgets_init' );
 /**
  * Get all necessary theme files
  */
+require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/classes/ltpro-utils.php';
+require get_template_directory() . '/classes/ltpro-svg-icons.php';
+require get_template_directory() . '/inc/svg-icons.php';
+
+// Custom comment walker.
+require get_template_directory() . '/classes/ltpro-walker-comment.php';
+
+// Custom page walker.
+require get_template_directory() . '/classes/ltpro-walker-page.php';
