@@ -1,15 +1,15 @@
 <div id="primary-nav-bar" class="row">
     <nav class="col-12 navbar navbar-expand-lg navbar-light">
-        <div class="col-md-2">
+        <div class="col-4 col-sm-6 col-md-3">
             <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <img src="<?php echo ltpro_get_custom_logo(); ?>" />
             </a>
         </div>
 
-        <div class="col-md-10 rightside">
+        <div class="col-8 col-sm-6  col-md-9 rightside">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-9">
+                    <div class="col-6 col-md-6 col-lg-10">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="sr-only">Toggle navigation</span>
                             <i class="fa fa-bars"></i>
@@ -27,7 +27,7 @@
                             
                         </div>
                     </div>
-                    <div class="col-sm-3 primarymenu">
+                    <div class="col-6 col-md-6 col-lg-2 primarymenu">
                         <?php dynamic_sidebar( 'primarymenu' ); ?>
                     </div>
                 </div>

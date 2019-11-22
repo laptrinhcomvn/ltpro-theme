@@ -3,16 +3,16 @@ var CleanCSS = require('clean-css');
 var sass = require('node-sass');
 
 sass.render({
-    file: 'scss/style.scss',
-    outputStyle: 'compressed',
-},
+        file: 'scss/style.scss',
+        outputStyle: 'compressed',
+    },
     function (error, result) {
-    if (!error) {
-        // No errors during the compilation, write this result on the disk
-        fs.writeFile('css/style.css', result.css.toString(), function (err) {
-            if(err){console.log(err);}
-        });
-    }
+        if (!error) {
+            // No errors during the compilation, write this result on the disk
+            fs.writeFile('css/style.css', result.css.toString(), function (err) {
+                if(err){console.log(err);}
+            });
+        }
     });
 
 

@@ -7,7 +7,7 @@ get_header();
 
 ?>
 
-    <div id="content-wrapper" class="container-fluid page-wrapper page page-<?php echo get_post_field('post_name', get_the_ID()) ?> ">
+    <div id="content-wrapper" class="container-fluid p-0 page-wrapper page page-<?php echo get_post_field('post_name', get_the_ID()) ?> ">
 
         <?php
 

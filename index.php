@@ -11,7 +11,7 @@ get_header();
 ?>
 
 
-<div class="container-fluid content-wrapper">
+<div class="container-fluid p-0 content-wrapper">
 
     <section id="content" class="site-content" role="main">
 
