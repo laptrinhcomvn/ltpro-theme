@@ -2,8 +2,7 @@
 /**
  * The template for displaying Author info
  *
- * @package WordPress
- * @subpackage Twenty_Twenty
+ * @package laptrinhcomvn
  * @since 1.0.0
  */
 

@@ -2,8 +2,7 @@
 /**
  * Displays the content when the cover template is used.
  *
- * @package WordPress
- * @subpackage Twenty_Twenty
+ * @package laptrinhcomvn
  * @since 1.0.0
  */
 

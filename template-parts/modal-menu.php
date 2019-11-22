@@ -2,8 +2,7 @@
 /**
  * Displays the menu icon and modal
  *
- * @package WordPress
- * @subpackage Twenty_Twenty
+ * @package laptrinhcomvn
  * @since 1.0.0
  */
 
