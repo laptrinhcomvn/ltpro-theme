@@ -1,4 +1,14 @@
 <?php
+// display the custom logo for the site
+function ltpro_get_custom_logo() {
+    $custom_logo_id = get_theme_mod( 'custom_logo' );
+    $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+    if ( has_custom_logo() ) {
+        return esc_url( $logo[0] );
+    }
+    return '';
+}
+
 
 //Limit the excerpt by number of characters but do NOT truncate the last word.
 function ltpro_get_excerpt($limit = 200, $source = null, $readmore = false){
@@ -17,14 +27,3 @@ function ltpro_get_excerpt($limit = 200, $source = null, $readmore = false){
     return $excerpt;
 }
 
-// display the custom logo for the site
-function ltpro_get_custom_logo() {
-    $custom_logo_id = get_theme_mod( 'custom_logo' );
-    $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-    $link = '';
-    if ( has_custom_logo() ) {
-        
-        $link = esc_url( $logo[0] );
-    }
-    echo $link;
-}

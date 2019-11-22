@@ -11,7 +11,7 @@ get_header();
 ?>
 
 
-<div class="page-wrapper">
+<div class="container-fluid content-wrapper">
 
     <section id="content" class="site-content" role="main">
 
@@ -26,6 +26,7 @@ get_header();
 
     </section>
 
+    
 </div>
 
 <?php

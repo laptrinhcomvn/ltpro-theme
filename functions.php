@@ -45,21 +45,19 @@ function ltpro_theme_scripts_styles(){
 
     // version for files
     $ver = filemtime(get_template_directory().'/css/style.css');
-
+    
+    wp_enqueue_style( 'font-google','//fonts.googleapis.com/css?family=Google+Sans:100,400,500,700|Product+Sans:400,500,700|Roboto:400,500,700&lang=en');
     wp_enqueue_style( 'bootstrap', '//stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css',array(),'4.1.3');
-
     wp_enqueue_style( 'fontawesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css',array(),'5.11.2');
 
     wp_enqueue_style( 'main-style', get_template_directory_uri() .'/css/style.css',array(),$ver);
     wp_enqueue_style( 'responsive', get_template_directory_uri() .'/css/responsive.css',array(),$ver);
-    
 
     /**** Start Jquery ****/
     wp_enqueue_script("webfontloader", "//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",array(),'1.6.26',true);
-    
+
     wp_deregister_script('jquery');
     wp_enqueue_script("jquery","//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js",array(),'3.4.1',true);
-
     wp_enqueue_script("popper","//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",array(),'1.14.3',true);
     wp_enqueue_script("bootstrap", "//stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js",array(),'4.1.3',true);
     wp_enqueue_script("ltpro-js", get_template_directory_uri()."/js/ltpro.min.js",array(),$ver,true);
@@ -83,7 +81,83 @@ function shapeSpace_script_loader_tag($tag, $handle) {
 }
 add_filter('script_loader_tag', 'shapeSpace_script_loader_tag', 10, 2);
 
+
+function ltpro_theme_widgets_init() {
+    register_sidebar( array(
+        'name'          => __( 'Top Most Bar', 'laptrinhcomvn' ),
+        'id'            => 'topbar',
+        'description' => 'Please drop widget here to display it in Top Most Bar',
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => __( 'Primary Menu', 'laptrinhcomvn' ),
+        'id'            => 'primarymenu',
+        'description' => 'Please drop widget here to display it in Primary Menu',
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+
+    register_sidebar(array(
+        'name'          => __('Footer column 1', 'laptrinhcomvn'),
+        'id'            => 'footer-colum1',
+        'description'   => __('Footer column 1 wigets.', 'laptrinhcomvn'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h5 class="widget-title">',
+        'after_title'   => '</h5>',
+    ));
+
+    register_sidebar(array(
+        'name'          => __('Footer column 2', 'laptrinhcomvn'),
+        'id'            => 'footer-colum2',
+        'description'   => __('Footer column 2 wigets.', 'laptrinhcomvn'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h5 class="widget-title">',
+        'after_title'   => '</h5>',
+    ));
+
+    register_sidebar(array(
+        'name'          => __('Footer column 3', 'laptrinhcomvn'),
+        'id'            => 'footer-colum3',
+        'description'   => __('Footer column 3 wigets.', 'laptrinhcomvn'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h5 class="widget-title">',
+        'after_title'   => '</h5>',
+    ));
+
+    register_sidebar(array(
+        'name'          => __('Footer column 4', 'laptrinhcomvn'),
+        'id'            => 'footer-colum4',
+        'description'   => __('Footer column 4 wigets.', 'laptrinhcomvn'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h5 class="widget-title">',
+        'after_title'   => '</h5>',
+    ));
+
+
+    register_sidebar(array(
+        'name'          => __('Bottom bar', 'laptrinhcomvn'),
+        'id'            => 'bottom-bar',
+        'description'   => __('Footer bottom-bar wigets.', 'laptrinhcomvn'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h5 class="widget-title">',
+        'after_title'   => '</h5>',
+    ));
+
+}
+add_action( 'widgets_init', 'ltpro_theme_widgets_init' );
+
 /**
  * Get all necessary theme files
  */
-require get_template_directory() . '/inc/ltpro-utils.php';
+require get_template_directory() . '/classes/ltpro-utils.php';
