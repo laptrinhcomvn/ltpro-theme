@@ -1,0 +1,30 @@
+{
+  "name": "ltpro-child",
+  "version": "1.0.0",
+  "description": "LT Productions' Theme - taobao365.vn",
+  "author": "LT Team",
+  "license": "Copyrighted by laptrinhcomvn",
+  "homepage": "https://github.com/laptrinhcomvn/ltpro-theme",
+  "private": true,
+  "main": "/js/app.js",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "clean-css": "^4.2.1",
+    "clean-css-cli": "^4.3.0",
+    "fs": "0.0.1-security",
+    "node-sass": "^4.13.0",
+    "terser": "^4.4.0"
+  },
+  "scripts": {
+    "build": "node js/app.js"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "ltpro",
+    "laptrinhcomvn",
+    "ltpro-child"
+  ]
+}

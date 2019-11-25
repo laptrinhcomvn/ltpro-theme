@@ -1,0 +1,98 @@
+$primarycolor: #1FAB52;
+$secondarycolor: #FCAE02;
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { 
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) { 
+    body {
+        padding-top: 70px;
+    }
+
+    #primary-nav-bar {
+        height: 50px;
+
+        .rightside {
+            height: 50px;
+            line-height: 50px;
+            background-image: linear-gradient(-80deg, $primarycolor 90%, transparent 10%);
+
+            
+
+            #main-nav {
+                position: fixed;
+                z-index: 99999;
+                background-color: #fff;
+                width: 100%;
+                height: 100%;
+                display: none;
+                margin-top: 50px;
+                margin-left: -50px;
+                box-shadow: -1px 0px 10px 1px #eee;
+
+                ul li {
+                    display: inline;
+                }
+
+                ul li a {
+                    color: $primarycolor;
+                    line-height: 50px;
+                    padding: 0px 20px;
+                    margin: 0px;
+                    display: block;
+                    font-weight: 700;
+                }
+
+                ul li:hover a,
+                ul li.current-menu-item a {
+                    border-radius: 0px;
+                    color: #fff;
+                }
+            }
+
+            .navbar-toggler {
+                margin-top: 10px !important;
+            }
+
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 980px) {  
+    #main-nav {
+        position: fixed;
+        z-index: 99999;
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        display: none;
+        margin-top: 70px;
+        margin-left: -50px;
+        box-shadow: -1px 0px 10px 1px #eee;
+
+        #primary-top-menu {
+            ul li {
+                display: inline;
+            }
+
+            ul li a {
+                color: $primarycolor;
+                line-height: 50px;
+                padding: 0px 20px;
+                margin: 0px;
+                display: block;
+                font-weight: 700;
+            }
+
+            ul li:hover a,
+            ul li.current-menu-item a {
+                border-radius: 0px;
+                color: #fff;
+            }
+        }
+        
+    }
+}
