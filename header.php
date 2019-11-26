@@ -16,16 +16,9 @@
 <body <?php body_class(); ?>>
 
 	<div class="container-fluid fixed-top p-0">
-		<div class="row topbar">
-			<div class="container ">
-				<?php get_template_part('/inc/top', 'nav') ?>
-			</div>
-		</div>
-		<div class="row">
-			<div class="container-fluid">
-				<?php get_template_part('/inc/main', 'nav') ?>
-			</div>
-		</div>
+		<?php get_template_part('/inc/top', 'nav') ?>
+		
+		<?php get_template_part('/inc/main', 'nav') ?>
     </div>
 	
 
