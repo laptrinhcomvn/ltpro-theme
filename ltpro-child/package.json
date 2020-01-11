@@ -1,5 +1,5 @@
 {
-  "name": "ltpro-child",
+  "name": "ltpro-mphc",
   "version": "1.0.0",
   "description": "LT Productions' Theme - taobao365.vn",
   "author": "LT Team",
@@ -25,6 +25,6 @@
     "theme",
     "ltpro",
     "laptrinhcomvn",
-    "ltpro-child"
+    "ltpro-mphc"
   ]
 }

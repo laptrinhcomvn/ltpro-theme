@@ -7,7 +7,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package laptrinhcomvn
- * @subpackage ltpro-child
+ * @subpackage ltpro-mphc
  * @since 1.0.0
  */
 
