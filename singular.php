@@ -4,9 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package WordPress
- * @subpackage Twenty_Twenty
- * @since 1.0.0
+ * @package laptrinhcomvn
  */
 
 get_header();

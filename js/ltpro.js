@@ -1,6 +1,6 @@
 WebFont.load({
     google: {
-        families: ['Google Sans', 'Product Sans', 'Roboto']
+        families: ['Montserrat', 'Google Sans', 'Product Sans', 'Roboto']
     },
     active: function () {
         sessionStorage.fonts = true;

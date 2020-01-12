@@ -15,8 +15,8 @@
 
 <body <?php body_class(); ?>>
 
-	<div class="container-fluid fixed-top p-0">
-		<?php get_template_part('/inc/top', 'nav') ?>
+	<div class="container-fluid fixed-top p-0" id="topheader">
+		<?php get_template_part('/inc/top', 'bar') ?>
 		
 		<?php get_template_part('/inc/main', 'nav') ?>
     </div>

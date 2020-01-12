@@ -8,10 +8,14 @@ sass.render({
     },
     function (error, result) {
         if (!error) {
-            // No errors during the compilation, write this result on the disk
-            fs.writeFile('css/style.css', result.css.toString(), function (err) {
-                if(err){console.log(err);}
-            });
+          // No errors during the compilation, write this result on the disk
+          fs.writeFile("css/style.css", result.css.toString(), function(err) {
+            if (err) {
+              console.log(err);
+            }
+          });
+        } else {
+          console.log(error);
         }
     });
 
@@ -22,10 +26,16 @@ sass.render({
     },
     function (error, result) {
         if (!error) {
-            // No errors during the compilation, write this result on the disk
-            fs.writeFile('css/responsive.css', result.css.toString(), function (err) {
-                if(err){console.log(err);}
-            });
+          // No errors during the compilation, write this result on the disk
+          fs.writeFile("css/responsive.css", result.css.toString(), function(
+            err
+          ) {
+            if (err) {
+              console.log(err);
+            }
+          });
+        } else {
+          console.log(error);
         }
     });
 
