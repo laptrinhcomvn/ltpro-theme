@@ -9,7 +9,7 @@
   "repository": "git@github.com:laptrinhcomvn/ltpro-theme.git",
   "main": "/js/app.js",
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "clean-css": "^4.2.1",
