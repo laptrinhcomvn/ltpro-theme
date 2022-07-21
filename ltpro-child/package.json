@@ -15,7 +15,7 @@
     "clean-css-cli": "^4.3.0",
     "fs": "0.0.1-security",
     "node-sass": "^4.13.0",
-    "terser": "^4.4.0"
+    "terser": "^4.8.1"
   },
   "scripts": {
     "build": "node js/app.js"
